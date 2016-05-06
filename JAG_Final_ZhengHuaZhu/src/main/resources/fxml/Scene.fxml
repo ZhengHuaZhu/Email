@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="PropertyPane" prefHeight="831.0" prefWidth="651.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kfcstd.jag_phase3.controllers.PropertyController">
+   <children>
+      <GridPane alignment="CENTER_RIGHT" hgap="10.0" layoutX="60.0" layoutY="-2.0" prefHeight="823.0" prefWidth="631.0" vgap="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="-2.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="297.0" minWidth="10.0" prefWidth="254.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="347.0" minWidth="10.0" prefWidth="347.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2">
+               <children>
+                  <Label text="JAG Properties">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow color="#402818" />
+               </effect>
+            </HBox>
+            <Label text="Email Address" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="User Name" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Name" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Password for Email Address" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="SMTP url" GridPane.halignment="RIGHT" GridPane.rowIndex="10">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="IMAP url" GridPane.halignment="RIGHT" GridPane.rowIndex="12">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Url for Database Host" GridPane.halignment="RIGHT" GridPane.rowIndex="14">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Port Number" GridPane.halignment="RIGHT" GridPane.rowIndex="16">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Database Name" GridPane.halignment="RIGHT" GridPane.rowIndex="18">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="User" GridPane.halignment="RIGHT" GridPane.rowIndex="20">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Password" GridPane.halignment="RIGHT" GridPane.rowIndex="22">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="90.0" GridPane.columnSpan="2" GridPane.rowIndex="25">
+               <children>
+                  <Button fx:id="btnconfirm" mnemonicParsing="false" onAction="#onClickConfirm" text="Confirm" />
+                  <Button mnemonicParsing="false" onAction="#onClickQuit" text="Quit" />
+               </children>
+            </HBox>
+            <TextField fx:id="username" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="30.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField id="emailaddress" fx:id="emailaddress" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="30.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField id="name" fx:id="name" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets right="30.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField id="emailpassword" fx:id="emailpassword" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets right="30.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField id="smtpurl" fx:id="smtpurl" GridPane.columnIndex="1" GridPane.rowIndex="10">
+               <GridPane.margin>
+                  <Insets right="30.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField id="imapurl" fx:id="imapurl" GridPane.columnIndex="1" GridPane.rowIndex="12">
+               <GridPane.margin>
+                  <Insets right="30.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField id="hosturl" fx:id="hosturl" GridPane.columnIndex="1" GridPane.rowIndex="14">
+               <GridPane.margin>
+                  <Insets right="30.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField id="portnumber" fx:id="portnumber" GridPane.columnIndex="1" GridPane.rowIndex="16">
+               <GridPane.margin>
+                  <Insets right="30.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField id="databasename" fx:id="databasename" GridPane.columnIndex="1" GridPane.rowIndex="18">
+               <GridPane.margin>
+                  <Insets right="30.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField id="user" fx:id="user" GridPane.columnIndex="1" GridPane.rowIndex="20">
+               <GridPane.margin>
+                  <Insets right="30.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField id="password" fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="22">
+               <GridPane.margin>
+                  <Insets right="30.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label fx:id="labelusername" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="labelemail" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="labelname" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label fx:id="labelemailpassword" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label fx:id="labelsmtp" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <Label fx:id="labelimap" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <Label fx:id="labelhost" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+            <Label fx:id="labelport" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+            <Label fx:id="labeldb" GridPane.columnIndex="1" GridPane.rowIndex="19" />
+            <Label fx:id="labeluser" GridPane.columnIndex="1" GridPane.rowIndex="21" />
+            <Label fx:id="labelpassword" GridPane.columnIndex="1" GridPane.rowIndex="23" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

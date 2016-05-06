@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootAnchorPane" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kfcstd.jag_phase3.javafxmulticontainer.view.RootLayoutController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <top>
+                  <ToolBar prefHeight="0.0" prefWidth="999.0">
+                     <items>
+                        <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="200.0">
+                           <padding>
+                              <Insets left="12.0" />
+                           </padding>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="61.0" HBox.hgrow="ALWAYS">
+                           <effect>
+                              <DropShadow />
+                           </effect></HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="450.0" spacing="10.0">
+                           <children>
+                              <TextField />
+                              <SplitMenuButton mnemonicParsing="false" text="                           ">
+                                <items>
+                                  <MenuItem mnemonicParsing="false" text="From" />
+                                  <MenuItem mnemonicParsing="false" text="To" />
+                                    <MenuItem mnemonicParsing="false" text="Subject" />
+                                    <MenuItem mnemonicParsing="false" text="cc" />
+                                    <MenuItem mnemonicParsing="false" text="bcc" />
+                                </items>
+                              </SplitMenuButton>
+                              <Button mnemonicParsing="false" text="Search" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </HBox>
+                     </items>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ToolBar>
+               </top>
+               <center>
+                  <SplitPane dividerPositions="0.18036072144288579" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <items>
+                      <AnchorPane fx:id="TreeAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <SplitPane dividerPositions="0.29264214046822745" orientation="VERTICAL" prefHeight="367.0" prefWidth="529.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <items>
+                                  <AnchorPane fx:id="MailTableAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                                  <AnchorPane fx:id="EditorAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </SplitPane>
+               </center>
+            </BorderPane>
+         </center>
+         <top>
+            <MenuBar prefHeight="43.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                        <MenuItem fx:id="addnewfolder" mnemonicParsing="false" onAction="#addNewFolder" text="Add new folder" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Configuration">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#configureProperties" text="Property configuration" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+               <padding>
+                  <Insets left="10.0" top="8.0" />
+               </padding>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </MenuBar>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

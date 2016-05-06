@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="tablePane" prefHeight="200.0" prefWidth="1500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kfcstd.jag_phase3.javafxMailTable.view.MailTableController">
+   <children>
+      <TableView fx:id="tableView" layoutX="436.0" layoutY="212.0" onDragDetected="#dragDetected" prefHeight="200.0" prefWidth="1500.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="mailid" prefWidth="75.0" text="%mailid" />
+          <TableColumn fx:id="from" prefWidth="75.0" text="%from" />
+            <TableColumn fx:id="to" prefWidth="75.0" text="%to" />
+            <TableColumn fx:id="subject" prefWidth="75.0" text="%subject" />
+            <TableColumn fx:id="content" prefWidth="75.0" text="%content" />
+            <TableColumn fx:id="time" prefWidth="75.0" text="%time" />
+        </columns>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" />
+         </effect>
+      </TableView>
+   </children>
+</AnchorPane>
